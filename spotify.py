@@ -57,7 +57,8 @@ def get_songs_by_artist(token, artist_id):
 
 
 token = get_token()
-result = search_for_artist(token, "Drake")
+artist = input("What artist would you like to search: ")
+result = search_for_artist(token, artist)
 artist_id = result["id"]
 songs = get_songs_by_artist(token, artist_id)
 #prints the top 10 tracks of artist 
